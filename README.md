@@ -14,11 +14,12 @@
 1. input port number in args to run upon command
 2. add a logger for error logging
 
-### error.html
+### controllers & services
 1. create a html page under templates
 2. create a model under /main/* folder
 3. create Person and PersonForm objects
 4. create a service named PersonService that returns Persons and add Persons
 5. create css stylesheet
+6. create a controller and use @Value to get messages from properties
 
 

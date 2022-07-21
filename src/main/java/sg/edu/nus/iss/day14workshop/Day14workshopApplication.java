@@ -17,7 +17,7 @@ public class Day14workshopApplication {
 
 		SpringApplication app = new SpringApplication(Day14workshopApplication.class);
 
-		String port = "8089";
+		String port = "8080";
 		ApplicationArguments cliOpts = new DefaultApplicationArguments(args);
 
 		if (cliOpts.containsOption("port")) {

@@ -3,8 +3,13 @@ package sg.edu.nus.iss.day14workshop.services;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
+import org.springframework.stereotype.Service;
+
 import sg.edu.nus.iss.day14workshop.models.Person;
 
+@Service // annotation 
 public class PersonService {
     
     private List<Person> persons = new ArrayList<Person>();
