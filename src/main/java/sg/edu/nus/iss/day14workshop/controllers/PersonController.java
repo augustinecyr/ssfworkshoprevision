@@ -28,17 +28,24 @@ public class PersonController {
     @Value("${error.message}")
     private String errorMsg;
 
-    @RequestMapping(value={"/", "/home", "/index"}, method=RequestMethod.GET)
+    @RequestMapping(value = { "/", "/home", "/index" }, method = RequestMethod.GET)
     public String index(Model model) {
 
         model.addAttribute("message", message); // inject from welcome.message
         return "index";
     }
 
-    @RequestMapping(value="/testRetrieve" , method=RequestMethod.GET, produces= "application/json")
+    @RequestMapping(value = "/testRetrieve", method = RequestMethod.GET, produces = "application/json")
     public @ResponseBody List<Person> getAllPersons() {
         personList = perSvc.getPersons();
 
         return personList;
+    }
+
+    @RequestMapping(value="/personList", method = RequestMethod.GET)
+    public String personList(Model model) {
+        personList = perSvc.getPersons();
+        model.addAttribute("persons", personList);
+        return "personList"; // case sensitive to html file
     }
 }

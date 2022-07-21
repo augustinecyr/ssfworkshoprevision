@@ -21,5 +21,7 @@
 4. create a service named PersonService that returns Persons and add Persons
 5. create css stylesheet
 6. create a controller and use @Value to get messages from properties
+7. retrieve a json, test using Postman
+8. create a list to display on view
 
 
