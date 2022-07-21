@@ -28,7 +28,7 @@ public class PersonController {
     @Value("${error.message}")
     private String errorMsg;
 
-    @RequestMapping(value = { "/", "/home", "/index" }, method = RequestMethod.GET)
+    @RequestMapping(value = {"/", "/home", "/index"}, method = RequestMethod.GET)
     public String index(Model model) {
 
         model.addAttribute("message", message); // inject from welcome.message
