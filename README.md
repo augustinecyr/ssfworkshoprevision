@@ -23,5 +23,6 @@
 6. create a controller and use @Value to get messages from properties
 7. retrieve a json, test using Postman
 8. create a list to display on view
+9. add and create entry on addPerson
 
 
