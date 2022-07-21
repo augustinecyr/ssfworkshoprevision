@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.day14workshop.controllers;
+package sg.edu.nus.iss.workshoprevision.controllers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import sg.edu.nus.iss.day14workshop.models.Person;
-import sg.edu.nus.iss.day14workshop.models.PersonForm;
-import sg.edu.nus.iss.day14workshop.services.PersonService;
+import sg.edu.nus.iss.workshoprevision.models.Person;
+import sg.edu.nus.iss.workshoprevision.models.PersonForm;
+import sg.edu.nus.iss.workshoprevision.services.PersonService;
 
 @Controller
 public class PersonController {

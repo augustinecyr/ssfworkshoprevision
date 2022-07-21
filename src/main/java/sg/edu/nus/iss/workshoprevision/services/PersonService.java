@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.day14workshop.services;
+package sg.edu.nus.iss.workshoprevision.services;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import sg.edu.nus.iss.day14workshop.models.Person;
+import sg.edu.nus.iss.workshoprevision.models.Person;
 
 @Service // annotation 
 public class PersonService {

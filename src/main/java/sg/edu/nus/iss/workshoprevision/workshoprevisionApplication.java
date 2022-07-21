@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.day14workshop;
+package sg.edu.nus.iss.workshoprevision;
 
 import java.util.Collections;
 
@@ -10,12 +10,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.filter.CommonsRequestLoggingFilter;
 
 @SpringBootApplication
-public class Day14workshopApplication {
+public class workshoprevisionApplication {
 
 	public static void main(String[] args) {
 		// SpringApplication.run(Day14workshopApplication.class, args);
 
-		SpringApplication app = new SpringApplication(Day14workshopApplication.class);
+		SpringApplication app = new SpringApplication(workshoprevisionApplication.class);
 
 		String port = "8080";
 		ApplicationArguments cliOpts = new DefaultApplicationArguments(args);

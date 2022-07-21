@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.day14workshop.models;
+package sg.edu.nus.iss.workshoprevision.models;
 
 public class PersonForm {
 

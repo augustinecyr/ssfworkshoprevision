@@ -1,10 +1,10 @@
-package sg.edu.nus.iss.day14workshop;
+package sg.edu.nus.iss.workshoprevision;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Day14workshopApplicationTests {
+class workshoprevisionApplicationTests {
 
 	@Test
 	void contextLoads() {
