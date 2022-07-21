@@ -7,11 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import sg.edu.nus.iss.day14workshop.models.Person;
+import sg.edu.nus.iss.day14workshop.models.PersonForm;
 import sg.edu.nus.iss.day14workshop.services.PersonService;
 
 @Controller
@@ -47,5 +49,30 @@ public class PersonController {
         personList = perSvc.getPersons();
         model.addAttribute("persons", personList);
         return "personList"; // case sensitive to html file
+    }
+
+    @RequestMapping(value="/addPerson" , method = RequestMethod.GET)
+    public String showAddPersonPage(Model model) {
+        PersonForm pForm = new PersonForm();
+        model.addAttribute("personForm", pForm);
+        return "addPerson";
+    }
+
+    @RequestMapping(value="/addPerson" , method =RequestMethod.POST)
+    public String savePerson(Model model, @ModelAttribute("personForm") PersonForm personForm){
+        
+        String fname = personForm.getFirstName();
+        String lname = personForm.getLastName();
+
+        if(fname != null && fname.length() > 0 && lname != null && lname.length() > 0) {
+            Person newPerson = new Person(fname, lname);
+            perSvc.addPersons(newPerson);
+
+            return "redirect:/personList"; // returns personList after loop
+        }
+      
+        model.addAttribute("errorMsg", errorMsg);
+        return "addPerson";
+
     }
 }
