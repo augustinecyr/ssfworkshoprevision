@@ -27,6 +27,8 @@
 
 ### Heroku Commands
 ALWAYS MERGE DEVELOP AND BE ON MASTER BRANCH BEFORE DOING THIS
+CREATE system.properties file
+java.runtime.version:18
 1. heroku login / heroku login -i
 2. heroku apps:create
 3. git push heroku master 
