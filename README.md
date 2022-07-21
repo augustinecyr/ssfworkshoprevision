@@ -18,5 +18,7 @@
 1. create a html page under templates
 2. create a model under /main/* folder
 3. create Person and PersonForm objects
+4. create a service named PersonService that returns Persons and add Persons
+
 
 
